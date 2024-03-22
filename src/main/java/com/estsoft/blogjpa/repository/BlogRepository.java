@@ -18,6 +18,8 @@ public interface BlogRepository extends JpaRepository<Article,Long> {
     @Query(value = "SELECT title,content,id FROM article WHERE title= :title", nativeQuery = true)
     List<Article> findByTitle(String title);
     void deleteByContent(String content);
+    //conflict conflict conflict conflict conflict
+    //conflict conflict conflict conflict conflict
 
     //JPQL
     @Query(value = "update Article set title = :title where id = :id")
